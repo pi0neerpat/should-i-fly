@@ -1,0 +1,53 @@
+{
+  "name": "should-i-fly",
+  "version": "1.0.0",
+  "description": "Check the weather conditions for flying.",
+  "contributors": [
+    {
+      "name": "Patrick Gallagher",
+      "email": "Blockchainbuddha@gmail.com"
+    }
+  ],
+  "main": "dist/index.js",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "events": "^3.0.0",
+    "fast-average-color": "^5.2.0"
+  },
+  "devDependencies": {
+    "file-loader": "^4.2.0",
+    "jest": "^24.1.0",
+    "lit-element": "^2.1.0",
+    "surge": "^0.20.5",
+    "ts-jest": "^24.0.1",
+    "ts-loader": "^5.4.5",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack --config webpack.prod.js",
+    "serve": "webpack-dev-server --config webpack.dev.js",
+    "deploy": "npm run build && surge ./dist should-i-fly.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pi0neerpat/should-i-fly.git"
+  },
+  "keywords": [
+    "weather",
+    "flying",
+    "airplanes",
+    "conditions"
+  ],
+  "author": "Patrick Gallagher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pi0neerpat/should-i-fly/issues"
+  },
+  "homepage": "https://github.com/pi0neerpat/should-i-fly#readme"
+}
